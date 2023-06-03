@@ -1,0 +1,216 @@
+*{
+    margin: 0px;
+    padding: auto;
+}
+body{
+    background-color: hsla(160, 81%, 42%, 0.984);
+    color: rgb(247, 246, 246);
+    font: 200 14px 'poppins','sans-serif';
+}
+h2{
+    color: rgb(248, 0, 0);
+    font-size: 36px;  /*tamaño de letra de los h2*/
+    line-height: 36px; /*configura el espacio que esta entre las letras*/
+}
+h3{
+    /*tamaño de letra de los h3*/
+    color: #CECECE;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+nav{
+    position: fixed;/*tamaño de letra de los h2*/
+    width: 100%;
+    height: 55px;
+    background-color: rgb(221, 166, 14);
+    border-bottom: 1px solid white;
+    padding-top: 10px;
+    text-align: center;
+}
+nav ul{
+    display: inline-block;
+}
+nav ul li{
+    padding-top: 12px;
+}
+.section{
+    padding: 10px 100px 10px 10;
+    justify-content: center;
+}
+p{
+    text-align: justify;
+}
+cite{
+    font-weight: 300; /*Grosor de la letra cite*/
+}
+i{
+    font-size: 24px;/*Grosor de la letra cite*/
+}
+i:hover{
+    color: yellow;
+}
+a:any-link{
+    color: white;
+}
+a:-webkit-any-link{
+    color: white;
+}
+a:-moz-any-link{
+    color: white;
+}
+ul{
+    list-style: none; /*Para quitar los puntos blancos de la lista*/
+}
+li{
+    float: left;
+    margin-right: 15px;
+    font-size: 16px;
+
+}
+button{
+    border-radius: 10px;
+}
+footer{
+    height: 55px;
+    padding-top: 10px;
+    text-align: center;
+}
+footer ul{
+    display: inline-block;
+}
+footer ul li{
+    float: left;
+}
+.hastag{
+    color: yellow;
+}
+.seccion{
+    padding: 10px 100px 10px 100px;
+}
+#logo{
+    padding-top: 0px;
+    vertical-align: middle;
+}
+#redessociales{
+    margin-top: 20px;
+    list-style: none;
+}
+#inicio{
+    background-image: url("../img/inicio.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 280px;
+    padding-top: 75px;
+
+}
+#experiencia{
+    background-color: white;
+    color: black;
+}
+#portafolio{
+    border-top: 1px solid #e2c81e; /*para la linea amarilla*/
+}
+.masinfo button{
+    background-color: yellow;
+    font-weight: 600;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 5px;
+    padding: 5px;
+}
+/****************************************** cards portafolio**********************************/
+.filaportafolio{
+    display: flex;/*flex Box*/
+    flex-direction: row;/*Los 4 elementos en fila*/
+    flex-wrap: wrap;/*Si no hay espacio se pone en columna*/
+    justify-content: space-between;/*Espacios equidistantes*/
+    gap: 30px 30px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.card{
+    width: 250px;
+    background-color: black;
+    border-radius: 10px;
+}
+.card img, .card video{
+    border-radius: 15px 15px 0px 0px;
+}
+.card h3{
+    color: hsl(180, 92%, 40%);
+}
+.car h4{
+    margin: 0 5px 5x 0;
+}
+.card h3, .card , h4, .card p,.masinfo{
+    padding: 0 15px;
+}
+.card.masinfo{
+    margin: 15px 0px 15x 0px;
+    height: 26px;
+}
+.card .sep{
+    margin: 0 5px 5px 0;
+}
+.card .masinfo button{
+    float: right;
+}
+/**********CARD EXPERIENCIA**********/
+.gridexp{
+    display: grid;
+    grid-template-columns: repeat(4,350px);
+    grid-gap:10px;
+    justify-content: space-between;
+    align-content: space-around;
+}
+.cardexp{
+    background-color: #222;
+    border-radius: 15px;
+    color: white;
+    padding: 10px 15px;
+}
+.cardexp h2{
+    margin-bottom: 5px;
+}
+.cardex h3{
+    margin-bottom: 20px;
+}
+.cardex p{
+    margin-bottom: 20px;
+}
+.cardex ul{
+    display: flex;
+    justify-content: flex-end;
+}
+.cardex li{
+    height: 30px;
+}
+/*************FORMULARIO********************/
+.itemform{
+    display: grid;
+    grid-template-columns: 150px 350px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.itemform label{
+    font-weight: 700;
+}
+.itemform input, .itemform textarea{
+    border-radius: 5x;
+    border: 1px solid white;
+}
+input[type="submit"]{
+    background-color: #222;
+    border: 1 px solid #222;
+    color: white;
+    padding: 10px;
+    grid-column: 2/3;
+    justify-self: end;
+}
+.footerl{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
